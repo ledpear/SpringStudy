@@ -3,14 +3,18 @@ package hello.Studyspring.service;
 import hello.Studyspring.domain.Member;
 import hello.Studyspring.repository.MemberRepository;
 import hello.Studyspring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.IllformedLocaleException;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
     private final MemberRepository memberRepository;
 
+    @Autowired
     public MemberService(MemberRepository memberRepository){
         this.memberRepository = memberRepository;
     }
