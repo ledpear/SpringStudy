@@ -13,4 +13,10 @@ public class MemberController {
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
     }
+
+//    @Autowired private MemberService memberService;
+
+//    public void setMemberService(MemberService memberService){
+//        this.memberService = memberService;
+//    }
 }
